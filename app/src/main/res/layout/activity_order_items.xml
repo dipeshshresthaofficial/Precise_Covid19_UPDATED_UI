@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderItems"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER ITEMS"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/orderPPE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter the amount of PPE"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
+                android:textStyle="italic"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/orderMask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter the amount of Face Mask"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
+                android:textStyle="italic"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/orderShield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter the amount of Face Shield"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
+                android:textStyle="italic"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/orderGloves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter the amount of Gloves"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
+                android:textStyle="italic"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/orderSanitizer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter the amount of Sanitizer"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
+                android:textStyle="italic"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#000"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/address"
+                android:textColor="#000"
+                android:hint="Enter Your full address."
+                android:inputType="textPassword"
+                android:textStyle="italic"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/placeOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_btn_round"
+                android:text="ORDER"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/trackOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_btn_round"
+                android:text="TRACK"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

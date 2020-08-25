@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "677048769504",
+    "firebase_url": "https://covoid19-hackathon-project.firebaseio.com",
+    "project_id": "covoid19-hackathon-project",
+    "storage_bucket": "covoid19-hackathon-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677048769504:android:4d584ac291338d70dc2985",
+        "android_client_info": {
+          "package_name": "com.example.coronago"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677048769504-e3ujoagrs10gm32hnkgj6jltbg51vcd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsP_rDQATPcjJ6-uYra8WWD6IomJFBtWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677048769504-e3ujoagrs10gm32hnkgj6jltbg51vcd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

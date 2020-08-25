@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coronago">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/profile"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/profile"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ChatBot"></activity>
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".Progress" />
+        <activity android:name=".OrderItems" />
+        <activity android:name=".AboutUs" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".AddActivity" /> <!-- <activity android:name=".SplashScreen"></activity> -->
+        <activity
+            android:name=".GamesActivity"
+            android:parentActivityName=".games" />
+        <activity
+            android:name=".games"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Predicted"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AvailableProducts"
+            android:parentActivityName=".AvailabilityActivity" />
+        <activity
+            android:name=".AvailabilityActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CovidTestActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Register2Activity" />
+        <activity
+            android:name=".CovidInfo"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UpdateStockActivity2"
+            android:parentActivityName=".activity_stock2" />
+        <activity
+            android:name=".activity_stock2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EntertainmentActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDFYKURkje9vSVh2gW5t-zCG5x90Fu0-zY" />
+    </application>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

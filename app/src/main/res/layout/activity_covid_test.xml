@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="15dp"
+    android:orientation="vertical"
+    tools:context=".CovidTestActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <Button
+        android:id="@+id/genderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/custom_label"
+        android:layout_marginTop="10dp"
+        android:text="Gender"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="84dp"
+        />
+
+        <Button
+            android:id="@+id/maleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:text="Male"
+            tools:layout_editor_absoluteX="160dp"
+            android:layout_marginTop="10dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:onClick="genderClicked"
+            />
+
+        <Button
+            android:id="@+id/femaleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cust_btn"
+            android:onClick="genderClicked1"
+            android:text="Female"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <Button
+        android:id="@+id/ageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@drawable/custom_label"
+        android:layout_marginTop="10dp"
+        android:text="Age"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="165dp"
+        android:visibility="gone"/>
+
+
+
+        <EditText
+            android:id="@+id/ageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter your age"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/symptomBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_label"
+            android:text="Symptom"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/symptomBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Dry Cough"
+            android:padding="5dp"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:onClick="symptomClicked"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/symptomBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Backboneache"
+            android:padding="5dp"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:onClick="symptomClicked"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/symptomBtn3"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Any Other"
+            android:padding="5dp"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:layout_marginTop="10dp"
+            android:onClick="symptomClicked"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/symptomBtn4"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="No I don't have any symptom."
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:layout_marginTop="10dp"
+            android:onClick="symptomClicked1"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<Button
+    android:id="@+id/tempBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/custom_label"
+    android:text="Body Temperature"
+    android:padding="5dp"
+    tools:layout_editor_absoluteX="160dp"
+    android:layout_marginTop="10dp"
+    tools:layout_editor_absoluteY="84dp"
+    android:visibility="gone"
+    />
+
+<Button
+    android:id="@+id/tempBtn1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/cust_btn"
+    android:textColor="#fff"
+    android:textSize="15dp"
+    android:layout_marginLeft="5dp"
+    android:text="98deg - 100 deg"
+    android:padding="5dp"
+    tools:layout_editor_absoluteX="160dp"
+    android:layout_marginTop="10dp"
+    tools:layout_editor_absoluteY="84dp"
+    android:onClick="tempClicked"
+    android:visibility="gone"
+    />
+<Button
+    android:id="@+id/tempBtn2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/cust_btn"
+    android:textColor="#fff"
+    android:textSize="15dp"
+    android:layout_marginLeft="5dp"
+    android:text="101deg - 102deg"
+    android:padding="5dp"
+    tools:layout_editor_absoluteX="160dp"
+    tools:layout_editor_absoluteY="84dp"
+    android:layout_marginTop="10dp"
+    android:onClick="tempClicked1"
+    android:visibility="gone"
+    />
+<Button
+    android:id="@+id/tempBtn3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/cust_btn"
+    android:textColor="#fff"
+    android:textSize="15dp"
+    android:layout_marginLeft="5dp"
+    android:text="103deg - 104deg"
+    android:padding="5dp"
+    tools:layout_editor_absoluteX="160dp"
+    tools:layout_editor_absoluteY="84dp"
+    android:layout_marginTop="10dp"
+    android:onClick="tempClicked2"
+    android:visibility="gone"
+    />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/travelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_label"
+            android:text="Did you Travel recently?"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/travelBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Yes"
+
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:onClick="travelClicked"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/travelBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="No"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:layout_marginTop="10dp"
+            android:onClick="travelClicked1"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/diseaseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_label"
+            android:text="Did you suffer from any disease recently?"
+            tools:layout_editor_absoluteX="160dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/diseaseBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Yes"
+            android:layout_marginTop="10dp"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:onClick="diseaseClicked"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/diseaseBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cust_btn"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="No"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:onClick="diseaseClicked1"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

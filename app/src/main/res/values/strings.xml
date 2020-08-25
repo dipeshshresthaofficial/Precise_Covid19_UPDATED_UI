@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Precise</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="register">Register</string>
+    <string name="online_covid_test">Online Covid Test</string>
+    <string name="login">Login</string>
+    <string name="covid_protection">Covid Protection</string>
+    <string name="check_for_availability">Check for availability</string>
+    <string name="update_stock">Update Stock</string>
+    <string name="covid_info">Covid Info</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="email">Email</string>
+
+    <string name="name">Name</string>
+    <string name="register1">Register</string>
+    <string name="login1">Login</string>
+    <string name="logout">Logout</string>
+
+    <!--    Strings for stock activity-->
+    <string name="ppe">PPE</string>
+    <string name="face_mask">Face Mask</string>
+    <string name="face_sheild">Face Shield</string>
+    <string name="gloves">Gloves</string>
+    <string name="sanitizer">Sanitizer</string>
+
+    <string name="address">Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="dob">Date of Birth</string>
+    <string name="user_type">Do you Own Health Post?</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
